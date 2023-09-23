@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Semana06 {
 
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
-        byte n = 5;
         while(true){            
             System.out.println("Tablas del 1 al 12 de: ");
             System.out.println("1. Suma");
@@ -68,7 +66,8 @@ public class Semana06 {
                             System.out.println("\nLa tabla de la división del numero "+numeroDivision);
                             while(countDivision<=12){
                                 respuestaDivision =(float) (countDivision / numeroDivision);
-                                System.out.printf("%.0f / %.0f = %.2f %n", countDivision, numeroDivision, respuestaDivision);
+                                System.out.printf("%.0f / %.0f = %.2f %n", countDivision,
+                                        numeroDivision, respuestaDivision);
                                 countDivision = countDivision + 1;
                             }
                             countDivision = 0;
